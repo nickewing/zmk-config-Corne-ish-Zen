@@ -12,7 +12,7 @@
 #define QWERTY 0
 #define GAMING 1
 #define NUMPAD 2
-#define NUMROW 3
+#define SYMNUM 3
 #define ADJUST 4
 #define CONFIG 5
 
@@ -44,7 +44,7 @@
    &kp TAB   &kp Q       &kp W      &kp E      &kp R      &kp T          &kp Y &kp U      &kp I      &kp O        &kp P          &kp BKSP
    &kp LCTL  &hm LSHFT A &hm LALT S &hm LGUI D &hm LCTL F &kp G          &kp H &hm LCTL J &hm LGUI K &hm LALT L   &hm LSHFT SEMI &hm RCTL QUOT
    &kp LSHFT &kp Z       &kp X      &kp C      &kp V      &kp B          &kp N &kp M      &kp CMMA   &kp DOT      &kp FSLH       &kp RSFT
-         &lt ADJUST MINUS &kp LGUI &lt NUMROW SPC   &lt NUMROW ENTER &kp LALT &lt ADJUST GRAVE
+         &lt ADJUST MINUS &kp LGUI &lt SYMNUM SPC   &lt SYMNUM ENTER &kp LALT &lt ADJUST GRAVE
                         >;
                 };
 
@@ -54,7 +54,7 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T       &kp Y &kp U &kp I    &kp O   &kp P    &kp BKSP
    &kp LCTL  &kp A &kp S &kp D &kp F &kp G       &kp H &kp J &kp K    &kp L   &kp SEMI &kp QUOT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B       &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp RSFT
-      &lt ADJUST MINUS &kp LGUI &lt NUMROW SPC   &lt NUMROW ENTER &kp LALT &lt ADJUST GRAVE
+      &lt ADJUST MINUS &kp LGUI &lt SYMNUM SPC   &lt SYMNUM ENTER &kp LALT &lt ADJUST GRAVE
                         >;
                 };
 
@@ -64,17 +64,17 @@
    &kp TAB     &none &none &none &none &none    &kp KP_EQUAL    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &kp BSPC
    &kp KP_NLCK &none &none &none &none &none    &kp KP_ASTERISK &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS  &none
    &tog NUMPAD &none &none &none &none &none    &kp KP_SLASH    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER &none
-              &mo CONFIG &kp LCTL &mo NUMROW    &kp SPC &kp KP_N0 &kp KP_DOT
+              &mo CONFIG &kp LCTL &mo SYMNUM    &kp SPC &kp KP_N0 &kp KP_DOT
                         >;
                 };
 
                 numrow_layer {
-                        label = "NUMROW";
+                        label = "SYMNUM";
                         bindings = <
    &kp ESC   &kp EXCL &kp AT &kp PRCNT &kp CARET &kp DLLR   &kp PLUS &kp STAR  &kp LBRC &kp RBRC &kp PIPE  &kp DEL
    &kp LCTL  &kp N1   &kp N2 &kp N3    &kp N4    &kp N5     &kp AMPS &kp EQUAL &kp LBKT &kp RBKT &kp MINUS &kp UNDER
    &none     &kp N6   &kp N7 &kp N8    &kp N9    &kp N0     &kp HASH &kp BSLH  &kp LPAR &kp RPAR &kp GRAVE &kp TILDE
-                 &lt ADJUST MINUS &kp LGUI &lt NUMROW SPC   &lt NUMROW ENTER &kp LALT &lt ADJUST GRAVE
+                 &lt ADJUST MINUS &kp LGUI &lt SYMNUM SPC   &lt SYMNUM ENTER &kp LALT &lt ADJUST GRAVE
                         >;
                 };
 
@@ -83,8 +83,8 @@
                         bindings = <
    &mo CONFIG       &none   &none &none      &none       &none       &none     &none      &kp UP     &none     &none &mo CONFIG
    &none       &none   &none &none      &none       &kp C_VOL_UP     &kp PG_UP &kp LEFT   &kp DOWN   &kp RIGHT &none &none
-   &kp CAPS    &none   &none &kp C_MUTE &kp C_PLAY  &kp C_VOL_DN     &kp PG_DN &kp C_NEXT &kp C_PREV &none     &none &none
-                          &lt ADJUST MINUS &lt NUMROW SPC &kp LGUI   &kp LALT &lt NUMROW ENTER &tog GAMING
+   &kp CAPS    &none   &none &kp C_MUTE &kp C_PLAY  &kp C_VOL_DN     &kp PG_DN &kp C_PREV &kp C_NEXT &none     &none &none
+                          &lt ADJUST MINUS &lt SYMNUM SPC &kp LGUI   &kp LALT &lt SYMNUM ENTER &tog GAMING
                         >;
                 };
 
@@ -94,7 +94,7 @@
    &reset     &none        &none        &none        &none        &none           &kp F1   &kp F2  &kp F3 &kp F4 &kp F5  &none
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &kp F6   &kp F7  &kp F8 &kp F9 &kp F10 &none
    &none      &none        &none        &none        &none        &none           &kp F11  &kp F12 &none &none &none &none
-                                       &lt ADJUST MINUS &kp LGUI &lt NUMROW SPC   &lt NUMROW ENTER &kp LALT &lt ADJUST GRAVE
+                                       &lt ADJUST MINUS &kp LGUI &lt SYMNUM SPC   &lt SYMNUM ENTER &kp LALT &lt ADJUST GRAVE
                         >;
                 };
         };
