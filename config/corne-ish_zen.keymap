@@ -11,10 +11,9 @@
 
 #define QWERTY 0
 #define GAMING 1
-#define NUMPAD 2
-#define SYMNUM 3
-#define ADJUST 4
-#define CONFIG 5
+#define SYMNUM 2
+#define ADJUST 3
+#define CONFIG 4
 
 &mt {
     tapping-term-ms = <200>;
@@ -58,23 +57,13 @@
                         >;
                 };
 
-                numpad_layer {
-                        label = "NUMPAD";
-                        bindings = < 
-   &kp TAB     &none &none &none &none &none    &kp KP_EQUAL    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &kp BSPC
-   &kp KP_NLCK &none &none &none &none &none    &kp KP_ASTERISK &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS  &none
-   &tog NUMPAD &none &none &none &none &none    &kp KP_SLASH    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER &none
-              &mo CONFIG &kp LCTL &mo SYMNUM    &kp SPC &kp KP_N0 &kp KP_DOT
-                        >;
-                };
-
-                numrow_layer {
-                        label = "SYMNUM";
+                synnum_layer {
+                        label = "SYM";
                         bindings = <
    &kp ESC   &kp EXCL &kp AT &kp PRCNT &kp CARET &kp DLLR   &kp PLUS &kp STAR  &kp LBRC &kp RBRC &kp PIPE  &kp DEL
    &kp LCTL  &kp N1   &kp N2 &kp N3    &kp N4    &kp N5     &kp AMPS &kp EQUAL &kp LBKT &kp RBKT &kp MINUS &kp UNDER
    &none     &kp N6   &kp N7 &kp N8    &kp N9    &kp N0     &kp HASH &kp BSLH  &kp LPAR &kp RPAR &kp GRAVE &kp TILDE
-                 &lt ADJUST MINUS &kp LGUI &lt SYMNUM SPC   &lt SYMNUM ENTER &kp LALT &lt ADJUST GRAVE
+                     &lt ADJUST MINUS &kp LGUI &kp RALT     &kp RALT &kp LALT &lt ADJUST GRAVE
                         >;
                 };
 
