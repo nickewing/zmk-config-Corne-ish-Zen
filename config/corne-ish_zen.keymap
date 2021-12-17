@@ -49,7 +49,7 @@
                 };
 
                 synnum_layer {
-                        label = "SYM";
+                        label = "QWERTY";
                         bindings = <
    &kp ESC   &kp EXCL     &kp AT      &kp PRCNT   &kp CARET   &kp DLLR   &kp PLUS &kp STAR       &kp LBRC      &kp RBRC      &kp PIPE        &kp DEL
    &kp LCTL  &hm LSHFT N1 &hm LALT N2 &hm LGUI N3 &hm LCTL N4 &kp N5     &kp AMPS &hm LCTL EQUAL &hm LGUI LBKT &hm LALT RBKT &hm LSHFT MINUS &hm RCTL UNDER
@@ -59,7 +59,7 @@
                 };
 
                 adjust_layer {
-                        label = "ADJUST";
+                        label = "QWERTY";
                         bindings = <
    &mo CONFIG  &none   &none &none      &none       &none            &none     &none      &kp UP     &none     &none &mo CONFIG
    &none       &none   &none &none      &none       &kp C_VOL_UP     &kp PG_UP &kp LEFT   &kp DOWN   &kp RIGHT &none &none
@@ -89,7 +89,7 @@
                 };
 
                 gaming_num_layer {
-                        label = "GAMING NUM";
+                        label = "GAMING";
                         bindings = <
    &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
    &trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &trans &trans &trans &trans &trans &trans
