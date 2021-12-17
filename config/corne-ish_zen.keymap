@@ -10,10 +10,10 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define QWERTY 0
-#define SYMNUM 1
-#define ADJUST 2
-#define CONFIG 3
-#define GAMING 4
+#define GAMING 1
+#define SYMNUM 2
+#define ADJUST 3
+#define CONFIG 4
 #define GAMING_NUM 5
 
 &mt {
@@ -21,7 +21,6 @@
 };
 
 / {
-
 
        behaviors {
            hm: homerow_mods {
@@ -41,10 +40,20 @@
                 default_layer {
                         label = "QWERTY";
                         bindings = <
-   &kp TAB   &kp Q       &kp W      &kp E      &kp R      &kp T          &kp Y &kp U      &kp I      &kp O        &kp P          &kp BKSP
-   &kp LCTL  &hm LSHFT A &hm LALT S &hm LGUI D &hm LCTL F &kp G          &kp H &hm LCTL J &hm LGUI K &hm LALT L   &hm LSHFT SEMI &hm RCTL QUOT
-   &kp LSHFT &kp Z       &kp X      &kp C      &kp V      &kp B          &kp N &kp M      &kp CMMA   &kp DOT      &kp FSLH       &kp RSFT
-         &lt ADJUST MINUS &kp LGUI &lt SYMNUM SPC   &lt SYMNUM ENTER &kp LALT &lt ADJUST GRAVE
+   &kp TAB   &kp Q       &kp W      &kp E      &kp R      &kp T    &kp Y &kp U      &kp I      &kp O        &kp P          &kp BKSP
+   &kp LCTL  &hm LSHFT A &hm LALT S &hm LGUI D &hm LCTL F &kp G    &kp H &hm LCTL J &hm LGUI K &hm LALT L   &hm LSHFT SEMI &hm RCTL QUOT
+   &kp LSHFT &kp Z       &kp X      &kp C      &kp V      &kp B    &kp N &kp M      &kp CMMA   &kp DOT      &kp FSLH       &kp RSFT
+                       &lt ADJUST MINUS &kp LGUI &lt SYMNUM SPC    &lt SYMNUM ENTER &kp LALT &lt ADJUST GRAVE
+                        >;
+                };
+
+                gaming_layer {
+                        label = "GAMING";
+                        bindings = <
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp BKSP
+   &kp LCTL  &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K    &kp L   &kp SEMI &kp QUOT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp RSFT
+            &kp LALT &mo GAMING_NUM  &kp SPC  &lt SYMNUM ENTER &kp LGUI &lt ADJUST GRAVE
                         >;
                 };
 
@@ -75,16 +84,6 @@
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &kp F6   &kp F7  &kp F8 &kp F9 &kp F10 &none
    &none      &none        &none        &none        &none        &none           &kp F11  &kp F12 &none  &none  &none   &none
                                                            &trans &trans &trans   &trans &trans &trans
-                        >;
-                };
-
-                gaming_layer {
-                        label = "GAMING";
-                        bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp BKSP
-   &kp LCTL  &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K    &kp L   &kp SEMI &kp QUOT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp RSFT
-            &kp LALT &mo GAMING_NUM  &kp SPC  &trans &kp LGUI &trans
                         >;
                 };
 
