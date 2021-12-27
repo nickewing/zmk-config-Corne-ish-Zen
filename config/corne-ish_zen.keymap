@@ -11,10 +11,11 @@
 
 #define QWERTY 0
 #define GAMING 1
-#define SYMNUM 2
-#define ADJUST 3
-#define CONFIG 4
-#define GAMING_NUM 5
+#define GAMING2 2
+#define SYMNUM 3
+#define ADJUST 4
+#define CONFIG 5
+#define GAMING_NUM 6
 
 &mt {
     tapping-term-ms = <200>;
