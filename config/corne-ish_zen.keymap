@@ -74,7 +74,7 @@
    &kp ESC   &kp EXCL     &kp AT      &kp PRCNT   &kp CARET   &kp DLLR   &kp PLUS &kp STAR       &kp LBRC      &kp RBRC      &kp PIPE        &kp DEL
    &kp LCTL  &hm LSHFT N1 &hm LALT N2 &hm LGUI N3 &hm LCTL N4 &kp N5     &kp AMPS &hm LCTL EQUAL &hm LGUI LBKT &hm LALT RBKT &hm LSHFT MINUS &hm RCTL UNDER
    &none     &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp HASH &kp BSLH       &kp LPAR      &kp RPAR      &kp GRAVE       &kp TILDE
-                                                &trans &trans &kp RALT   &kp RALT &trans &trans
+                                             &trans &kp RALT &kp UNDER   &kp UNDER &kp RALT &trans
                         >;
                 };
 
