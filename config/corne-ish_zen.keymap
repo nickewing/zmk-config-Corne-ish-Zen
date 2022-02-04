@@ -82,8 +82,8 @@
                         label = "QWERTY";
                         bindings = <
    &mo CONFIG  &none   &none &none      &none       &none            &none     &none      &kp UP     &none     &none &mo CONFIG
-   &none       &none   &none &none      &none       &kp C_VOL_UP     &kp PG_UP &kp LEFT   &kp DOWN   &kp RIGHT &none &none
-   &none       &none   &none &kp C_MUTE &kp C_PLAY  &kp C_VOL_DN     &kp PG_DN &kp C_PREV &kp C_NEXT &none     &none &none
+   &trans      &none   &none &none      &none       &kp C_VOL_UP     &kp PG_UP &kp LEFT   &kp DOWN   &kp RIGHT &none &trans
+   &trans      &none   &none &kp C_MUTE &kp C_PLAY  &kp C_VOL_DN     &kp PG_DN &kp C_PREV &kp C_NEXT &none     &none &trans
                                             &trans &trans &trans     &trans &trans &trans
                         >;
                 };
