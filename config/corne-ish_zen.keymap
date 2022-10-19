@@ -14,8 +14,8 @@
 #define GAME 1
 #define GAME2 3
 #define SYMNUM 4
-#define ADJUST 5
-#define SYMNUM_HRM 6
+#define SYMNUM_HRM 5
+#define ADJUST 6
 #define ADJUST_HRM 7
 #define CONFIG 8
 #define GAMING_NUM 9
@@ -46,8 +46,8 @@
                         bindings = <
    &kp TAB   &kp Q       &kp W      &kp E      &kp R        &kp T    &kp Y &kp U        &kp I      &kp O        &kp P          &kp BKSP
    &kp LCTL  &kp A       &kp S      &kp D      &kp F        &kp G    &kp H &kp J        &kp K      &kp L        &kp SEMI       &hm RCTL QUOT
-   &kp LSHFT &kp Z       &kp X      &kp C      &lt ADJUST V &kp B    &kp N &lt ADJUST M &kp CMMA   &kp DOT      &kp FSLH       &kp RSFT
-                                &lt ADJUST MINUS &kp SPC &kp LGUI     &kp LALT &lt SYMNUM ENTER &lt ADJUST GRAVE
+   &kp LSHFT &kp Z       &kp X      &kp C      &kp V        &kp B    &kp N &kp M        &kp CMMA   &kp DOT      &kp FSLH       &kp RSFT
+                                &kp LGUI &kp SPC &lt SYMNUM MINUS    &lt ADJUST GRAVE &kp ENTER &kp LALT
                         >;
                 };
 
@@ -57,7 +57,7 @@
    &kp TAB   &kp Q       &kp W      &kp E      &kp R        &kp T    &kp Y &kp U        &kp I      &kp O        &kp P          &kp BKSP
    &kp LCTL  &hm LSHFT A &hm LALT S &hm LGUI D &hm LCTL F   &kp G    &kp H &hm LCTL J   &hm LGUI K &hm LALT L   &hm LSHFT SEMI &hm RCTL QUOT
    &kp LSHFT &kp Z       &kp X      &kp C      &lt ADJUST V &kp B    &kp N &lt ADJUST M &kp CMMA   &kp DOT      &kp FSLH       &kp RSFT
-                 &lt ADJUST_HRM MINUS &lt SYMNUM_HRM SPC &kp LGUI     &kp LALT &lt SYMNUM_HRM ENTER &lt ADJUST_HRM GRAVE
+                            &kp LGUI &kp SPC &lt SYMNUM_HRM MINUS    &lt ADJUST_HRM GRAVE &kp ENTER &kp LALT
                         >;
                 };
 
@@ -87,7 +87,17 @@
    &kp ESC   &kp EXCL     &kp AT      &kp PRCNT   &kp CARET   &kp DLLR   &kp PLUS &kp STAR       &kp LBRC      &kp RBRC      &kp PIPE        &kp DEL
    &kp LCTL  &kp N1       &kp N2      &kp N3      &kp N4      &kp N5     &kp AMPS &kp EQUAL      &kp LBKT      &kp RBKT      &kp MINUS       &hm RCTL UNDER
    &kp LSHFT &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp HASH &kp BSLH       &kp LPAR      &kp RPAR      &kp GRAVE       &kp TILDE
-                                  &kp CAPS &lt SYMNUM MINUS &kp LGUI     &kp RALT &lt SYMNUM UNDER &kp CAPS
+                                           &kp LGUI &kp SPC &kp CAPS     &kp CAPS &kp ENTER &kp LALT
+                        >;
+                };
+
+                synnum_hrm_layer {
+                        label = "HRM";
+                        bindings = <
+   &kp ESC   &kp EXCL     &kp AT      &kp PRCNT   &kp CARET   &kp DLLR   &kp PLUS &kp STAR       &kp LBRC      &kp RBRC      &kp PIPE        &kp DEL
+   &kp LCTL  &hm LSHFT N1 &hm LALT N2 &hm LGUI N3 &hm LCTL N4 &kp N5     &kp AMPS &hm LCTL EQUAL &hm LGUI LBKT &hm LALT RBKT &hm LSHFT MINUS &hm RCTL UNDER
+   &kp LSHFT &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp HASH &kp BSLH       &kp LPAR      &kp RPAR      &kp GRAVE       &kp TILDE
+                                           &kp LGUI &kp SPC &kp CAPS     &kp CAPS &kp ENTER &kp LALT
                         >;
                 };
 
@@ -98,16 +108,6 @@
    &trans      &none   &none &none      &none       &kp C_VOL_UP     &kp PG_UP &kp LEFT   &kp DOWN   &kp RIGHT &none &trans
    &trans      &none   &none &kp C_MUTE &kp C_PLAY  &kp C_VOL_DN     &kp PG_DN &kp C_PREV &kp C_NEXT &none     &none &trans
                                             &trans &trans &trans     &trans &trans &trans
-                        >;
-                };
-
-                synnum_hrm_layer {
-                        label = "HRM";
-                        bindings = <
-   &kp ESC   &kp EXCL     &kp AT      &kp PRCNT   &kp CARET   &kp DLLR   &kp PLUS &kp STAR       &kp LBRC      &kp RBRC      &kp PIPE        &kp DEL
-   &kp LCTL  &hm LSHFT N1 &hm LALT N2 &hm LGUI N3 &hm LCTL N4 &kp N5     &kp AMPS &hm LCTL EQUAL &hm LGUI LBKT &hm LALT RBKT &hm LSHFT MINUS &hm RCTL UNDER
-   &kp LSHFT &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp HASH &kp BSLH       &kp LPAR      &kp RPAR      &kp GRAVE       &kp TILDE
-                                  &kp CAPS &lt SYMNUM MINUS &kp LGUI     &kp RALT &lt SYMNUM UNDER &kp CAPS
                         >;
                 };
 
