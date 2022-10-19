@@ -87,7 +87,7 @@
    &kp ESC   &kp EXCL     &kp AT      &kp PRCNT   &kp CARET   &kp DLLR   &kp PLUS &kp STAR       &kp LBRC      &kp RBRC      &kp PIPE        &kp DEL
    &kp LCTL  &kp N1       &kp N2      &kp N3      &kp N4      &kp N5     &kp AMPS &kp EQUAL      &kp LBKT      &kp RBKT      &kp MINUS       &hm RCTL UNDER
    &kp LSHFT &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp HASH &kp BSLH       &kp LPAR      &kp RPAR      &kp GRAVE       &kp TILDE
-                                  &kp CAPS &lt SYMNUM MINUS &kp RALT     &kp RALT &lt SYMNUM UNDER &kp CAPS
+                                  &kp CAPS &lt SYMNUM MINUS &kp LGUI     &kp RALT &lt SYMNUM UNDER &kp CAPS
                         >;
                 };
 
@@ -107,7 +107,7 @@
    &kp ESC   &kp EXCL     &kp AT      &kp PRCNT   &kp CARET   &kp DLLR   &kp PLUS &kp STAR       &kp LBRC      &kp RBRC      &kp PIPE        &kp DEL
    &kp LCTL  &hm LSHFT N1 &hm LALT N2 &hm LGUI N3 &hm LCTL N4 &kp N5     &kp AMPS &hm LCTL EQUAL &hm LGUI LBKT &hm LALT RBKT &hm LSHFT MINUS &hm RCTL UNDER
    &kp LSHFT &kp N6       &kp N7      &kp N8      &kp N9      &kp N0     &kp HASH &kp BSLH       &kp LPAR      &kp RPAR      &kp GRAVE       &kp TILDE
-                                  &kp CAPS &lt SYMNUM MINUS &kp RALT     &kp RALT &lt SYMNUM UNDER &kp CAPS
+                                  &kp CAPS &lt SYMNUM MINUS &kp LGUI     &kp RALT &lt SYMNUM UNDER &kp CAPS
                         >;
                 };
 
